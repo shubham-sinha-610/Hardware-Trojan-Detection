@@ -1,0 +1,27 @@
+# Logs
+/hardware-sec/logs
+/hardware-sec/*.log
+/hardware-sec/npm-debug.log*
+/hardware-sec/yarn-debug.log*
+/hardware-sec/yarn-error.log*
+/hardware-sec/pnpm-debug.log*
+/hardware-sec/lerna-debug.log*
+
+/major/venv
+
+/hardware-sec/node_modules
+/hardware-sec/dist
+/hardware-sec/dist-ssr
+/hardware-sec/*.local
+/hardware-sec/.env.local
+
+# Editor directories and files
+/hardware-sec/.vscode/*
+/hardware-sec/!.vscode/extensions.json
+/hardware-sec/.idea
+/hardware-sec/.DS_Store
+/hardware-sec/*.suo
+/hardware-sec/*.ntvs*
+/hardware-sec/*.njsproj
+/hardware-sec/*.sln
+/hardware-sec/*.sw?
