@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hardware Project</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+  <script type="text/javascript" src="{{url_for('static',filename='script/jv.js')}}">
+  </script>
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"> -->
+  <style>
+    /* Applying the font to the body */
+    body {
+      font-family: 'Arvo', serif;
+    }
+    /* Optionally, you can apply the font to specific elements */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Arvo', serif;
+    }
+    /* You can adjust the font sizes, weights, etc. as needed */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-container">
+      <h1>Login</h1>
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p id="loginMessage"></p>
+    </div>
+  </div>
+
+  <div id="mainContainer" style="display: none;">
+    <h1>Test your hardware security</h1>
+    <form id="dataForm" action="/predict" method="POST"> <h2>Input Parameters</h2>
+      <div class="input-group">
+        <label for="input1">No of ports:</label>
+        <input type="text" id="input1" name="input1" required>
+      </div>
+      <div class="input-group">
+        <label for="input2">No of nets:</label>
+        <input type="text" id="input2" name="input2" required>
+      </div>
+      <div class="input-group">
+        <label for="input3">No of cells</label>
+        <input type="text" id="input3" name="input3" required>
+      </div>
+      <div class="input-group">
+        <label for="input4">seq cells:</label>
+        <input type="text" id="input4" name="input4" required>
+      </div>
+      <div class="input-group">
+        <label for="input5">No of Ref:</label>
+        <input type="text" id="input5" name="input5" required>
+      </div>
+      <div class="input-group">
+        <label for="input6">Net power:</label>
+        <input type="text" id="input6" name="input6" required>
+      </div>
+      
+      <input type='submit' value='Submit'>
+    
+
+    </form>
+    <div id="results"><h>Output: {{ result }} <br></div>
+  </div>
+
+  <!-- <script src="jv.js"></script> -->
+</body>
+</html>

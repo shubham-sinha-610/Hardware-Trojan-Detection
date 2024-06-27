@@ -1,0 +1,159 @@
+/* Base styles for common elements */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #AFEEEE;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #8FBC8B;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container input {
+    width: calc(50% - 12px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #AFEEEE; /* Light gray background */
+    font-size: 14px; /* Reduce font size */
+    display: inline-block; /* Display input fields inline */
+}
+
+.login-container label {
+    display: inline-block; /* Display labels as inline-block elements */
+    width: 100px; /* Fixed width for labels */
+    margin-right: 10px; /* Add some space between label and input */
+    text-align: left; /* Align label text to the left */
+}
+
+.login-container .input-group {
+    margin-bottom: 20px;
+}
+
+.login-container .input-group input {
+    margin-bottom: 0;
+}
+
+.login-container button {
+    width: 120px; /* Adjust width to make button smaller */
+    padding: 12px;
+    cursor: pointer;
+    background-color: #9370DB;
+    color: #AFEEEE;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+#loginMessage {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+#mainContainer {
+    width: 70%;
+    margin: auto;
+    background: linear-gradient(120deg, #AFEEEE, #AFEEEE); /* Gradient background with updated color */
+    border-radius: 8px;
+    padding: 40px;
+    transition: all 0.3s ease;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mainContainer h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#dataForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px; /* Move input fields and buttons a little above */
+}
+
+#dataForm label {
+    margin-bottom: 10px;
+    color: #555;
+    text-align: left; /* Align label text to the left */
+}
+
+#dataForm input[type="text"],
+#dataForm input[type="email"],
+#dataForm input[type="password"],
+#dataForm select {
+    width: calc(100% - 124px); /* Adjust width to account for label width and margin */
+    padding: 10px;
+    margin-top: 10px; /* Adjust margin-top */
+    margin-bottom: 10px; /* Add margin-bottom */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f5f5f5; /* Light gray background */
+    font-size: 14px; /* Reduce font size */
+}
+
+#dataForm button {
+    width: 120px; /* Adjust width to make button smaller */
+    padding: 12px;
+    cursor: pointer;
+    background-color: #663399;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+#dataForm button:hover {
+    background-color: #45a049;
+}
+
+
+#results h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Additional colors */
+.login-container button:focus,
+#dataForm button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #663399; /* Green shadow on button focus */
+}
+
+#dataForm button:disabled {
+    background-color: #ccc; /* Disabled button color */
+    cursor: not-allowed;
+}
+
+/* Keep the "Run Analysis" button as it is */
+#dataForm button[type="submit"] {
+    margin-top: 0; /* Reset margin-top */
+}
